@@ -1,4 +1,4 @@
-[![Built With Love By Stephen](https://www.stephcrown.com/static/media/stephcrown.e646cb0298463d8d82c9.png)](https://stephcrown.com)
+[![Built With Love By Stephen](https://res.cloudinary.com/stephcrown/image/upload/v1707241121/steph%20artifacts/Built_with_love_tag_jyduhq.png)](https://stephcrown.com)
 
 # crown elements
 
