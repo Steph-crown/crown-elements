@@ -1,8 +1,13 @@
 {
-  "name": "core",
+  "name": "@crownelements/core",
   "version": "0.0.1",
   "description": "Stencil Component Starter",
   "main": "dist/index.cjs.js",
+  "author": {
+    "name": "Stephen Emmanuel",
+    "email": "emmanuelstephen024@gmail.com",
+    "url": "https://stephcrown.com"
+  },
   "module": "dist/index.js",
   "es2015": "dist/esm/index.js",
   "es2017": "dist/esm/index.js",
