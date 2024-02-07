@@ -1,7 +1,2 @@
-'use strict';
-
-module.exports = react;
-
-function react() {
-  return 'Hello from react';
-}
+export * from "./components";
+export { defineCustomElements } from "stencil-library/loader";
