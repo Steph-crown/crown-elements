@@ -6,6 +6,40 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    /**
+     * The crown-button element.
+     */
+    interface CrownButton {
+        /**
+          * The color of the button.
+         */
+        "color": string;
+        /**
+          * Indicates whether the button is disabled.
+         */
+        "disabled": boolean;
+        /**
+          * The URL if the button behaves as a link.
+         */
+        "href": string;
+        /**
+          * The size of the button (e.g., small, medium, large).
+         */
+        "size": string;
+        /**
+          * The target window or frame if the button behaves as a link.
+         */
+        "target": string;
+        /**
+          * The type of the button (e.g., submit, reset, button).
+         */
+        "type": string;
+        "useShadowDOM": boolean;
+        /**
+          * The variant of the button (e.g., outlined, contained, text).
+         */
+        "variant": string;
+    }
     interface MyComponent {
         /**
           * The first name
@@ -22,6 +56,15 @@ export namespace Components {
     }
 }
 declare global {
+    /**
+     * The crown-button element.
+     */
+    interface HTMLCrownButtonElement extends Components.CrownButton, HTMLStencilElement {
+    }
+    var HTMLCrownButtonElement: {
+        prototype: HTMLCrownButtonElement;
+        new (): HTMLCrownButtonElement;
+    };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
     var HTMLMyComponentElement: {
@@ -29,10 +72,45 @@ declare global {
         new (): HTMLMyComponentElement;
     };
     interface HTMLElementTagNameMap {
+        "crown-button": HTMLCrownButtonElement;
         "my-component": HTMLMyComponentElement;
     }
 }
 declare namespace LocalJSX {
+    /**
+     * The crown-button element.
+     */
+    interface CrownButton {
+        /**
+          * The color of the button.
+         */
+        "color"?: string;
+        /**
+          * Indicates whether the button is disabled.
+         */
+        "disabled"?: boolean;
+        /**
+          * The URL if the button behaves as a link.
+         */
+        "href"?: string;
+        /**
+          * The size of the button (e.g., small, medium, large).
+         */
+        "size"?: string;
+        /**
+          * The target window or frame if the button behaves as a link.
+         */
+        "target"?: string;
+        /**
+          * The type of the button (e.g., submit, reset, button).
+         */
+        "type"?: string;
+        "useShadowDOM"?: boolean;
+        /**
+          * The variant of the button (e.g., outlined, contained, text).
+         */
+        "variant"?: string;
+    }
     interface MyComponent {
         /**
           * The first name
@@ -48,6 +126,7 @@ declare namespace LocalJSX {
         "middle"?: string;
     }
     interface IntrinsicElements {
+        "crown-button": CrownButton;
         "my-component": MyComponent;
     }
 }
@@ -55,6 +134,10 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            /**
+             * The crown-button element.
+             */
+            "crown-button": LocalJSX.CrownButton & JSXBase.HTMLAttributes<HTMLCrownButtonElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }

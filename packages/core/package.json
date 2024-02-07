@@ -17,7 +17,7 @@
   "unpkg": "dist/crownelements/crownelements.esm.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ionic-team/stencil-component-starter.git"
+    "url": "https://github.com/Steph-crown/crown-elements.git"
   },
   "files": [
     "dist/",
