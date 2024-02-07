@@ -24,7 +24,7 @@
     "access": "public"
   },
   "dependencies": {
-    "stencil-library": "*"
+    "core": "*"
   },
   "repository": {
     "type": "git",

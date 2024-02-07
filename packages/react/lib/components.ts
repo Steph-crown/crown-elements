@@ -1,4 +1,4 @@
-import type { JSX } from "stencil-library";
+import type { JSX } from "core";
 /* eslint-disable */
 /* tslint:disable */
 /* auto-generated react proxies */
