@@ -20,7 +20,8 @@ export const config: Config = {
     },
     reactOutputTarget({
       componentCorePackage: 'core',
-      proxiesFile: '../packages/react/lib/components.ts',
+      proxiesFile: '../react/lib/components.ts',
+      includePolyfills: true,
     }),
   ],
   testing: {
