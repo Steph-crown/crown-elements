@@ -1,4 +1,5 @@
 import { Config } from '@stencil/core';
+import { reactOutputTarget } from '@stencil/react-output-target';
 
 export const config: Config = {
   namespace: 'stencil-library',
@@ -17,8 +18,12 @@ export const config: Config = {
       type: 'www',
       serviceWorker: null, // disable service workers
     },
+    reactOutputTarget({
+      componentCorePackage: 'stencil-library',
+      proxiesFile: '../packages/react/lib/components.ts',
+    }),
   ],
   testing: {
-    browserHeadless: "new",
+    browserHeadless: 'new',
   },
 };
