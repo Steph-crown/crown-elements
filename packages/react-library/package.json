@@ -31,6 +31,6 @@
     "access": "public"
   },
   "dependencies": {
-    "core": "*"
+    "@crownelements/core": "*"
   }
 }
