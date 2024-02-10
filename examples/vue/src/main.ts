@@ -1,6 +1,9 @@
 import './assets/main.css'
 
-import { createApp } from 'vue'
 import App from './App.vue'
+import { ComponentLibrary } from '@crownelements/vue'
+import { createApp } from 'vue'
 
-createApp(App).mount('#app')
+createApp(App).use(ComponentLibrary).mount('#app')
+
+// createApp(App).mount('#app')
