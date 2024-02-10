@@ -1,0 +1,42 @@
+{
+  "name": "@crownelements/react-library",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Steph Crown <emmanuelstephen024@gmail.com>",
+  "homepage": "https://github.com/Steph-crown/crown-elements#readme",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Steph-crown/crown-elements.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/react-library.test.js",
+    "build": "npm run tsc",
+    "tsc": "tsc -p . --outDir ./dist"
+  },
+  "bugs": {
+    "url": "https://github.com/Steph-crown/crown-elements/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@crownelements/core": "*"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.55",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.3.3"
+  }
+}
