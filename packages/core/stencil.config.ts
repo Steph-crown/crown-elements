@@ -24,7 +24,7 @@ export const config: Config = {
       proxiesFile: '../react/lib/components.ts',
     }),
     vueOutputTarget({
-      componentCorePackage: 'stencil-library',
+      componentCorePackage: '@crownelements/core',
       proxiesFile: '../vue/lib/components.ts',
     }),
   ],

@@ -31,5 +31,8 @@
   },
   "dependencies": {
     "@crownelements/core": "*"
+  },
+  "devDependencies": {
+    "vue": "^3.4.18"
   }
 }
