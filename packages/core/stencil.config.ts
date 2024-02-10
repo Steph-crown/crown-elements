@@ -19,7 +19,7 @@ export const config: Config = {
       serviceWorker: null, // disable service workers
     },
     reactOutputTarget({
-      componentCorePackage: 'core',
+      componentCorePackage: '@crownelements/core',
       proxiesFile: '../react-library/lib/components.ts',
     }),
   ],
