@@ -1,5 +1,6 @@
 import { Config } from '@stencil/core';
 import { reactOutputTarget } from '@stencil/react-output-target';
+import { vueOutputTarget } from '@stencil/vue-output-target';
 
 export const config: Config = {
   namespace: 'core',
@@ -21,6 +22,10 @@ export const config: Config = {
     reactOutputTarget({
       componentCorePackage: '@crownelements/core',
       proxiesFile: '../react/lib/components.ts',
+    }),
+    vueOutputTarget({
+      componentCorePackage: 'stencil-library',
+      proxiesFile: '../vue/lib/components.ts',
     }),
   ],
   testing: {

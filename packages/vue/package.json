@@ -30,6 +30,6 @@
     "access": "public"
   },
   "dependencies": {
-    "stencil-library": "*"
+    "@crownelements/core": "*"
   }
 }
