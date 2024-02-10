@@ -1,7 +1,4 @@
-import {
-  MyComponent,
-  defineCustomElements,
-} from "@crownelements/react-library";
+import { MyComponent, defineCustomElements } from "@crownelements/react";
 
 defineCustomElements();
 

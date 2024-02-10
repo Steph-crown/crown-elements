@@ -1,7 +1,7 @@
 {
-  "name": "@crownelements/react-library",
+  "name": "@crownelements/react",
   "version": "0.0.0",
-  "description": "> TODO: description",
+  "description": "React wrapper for Crown Elements",
   "author": "Steph Crown <emmanuelstephen024@gmail.com>",
   "homepage": "https://github.com/Steph-crown/crown-elements#readme",
   "license": "ISC",
@@ -20,7 +20,7 @@
     "url": "git+https://github.com/Steph-crown/crown-elements.git"
   },
   "scripts": {
-    "test": "node ./__tests__/react-library.test.js",
+    "test": "node ./__tests__/react.test.js",
     "build": "npm run tsc",
     "tsc": "tsc -p . --outDir ./dist"
   },

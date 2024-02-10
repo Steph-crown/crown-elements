@@ -20,7 +20,7 @@ export const config: Config = {
     },
     reactOutputTarget({
       componentCorePackage: '@crownelements/core',
-      proxiesFile: '../react-library/lib/components.ts',
+      proxiesFile: '../react/lib/components.ts',
     }),
   ],
   testing: {
