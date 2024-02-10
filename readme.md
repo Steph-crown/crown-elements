@@ -38,7 +38,7 @@ Crown Elements can be used in any web application, regardless of the framework o
   <body>
     <crown-button>Click me</crown-button>
 
-    <script src="https://unpkg.com/@crownelements/core@0.0.1/dist/crownelements/crownelements.esm.js"></script>
+    <script src="https://unpkg.com/@crownelements/core@0.0.1/dist/core/core.esm.js"></script>
   </body>
 </html>
 ```
