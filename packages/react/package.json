@@ -1,14 +1,24 @@
 {
-  "name": "react",
+  "name": "@crownelements/react",
   "version": "0.0.0",
   "description": "React wrapper for crown elements",
   "keywords": [
     "crown",
     "crown-elements",
-    "react"
+    "react",
+    "web components",
+    "react wrapper",
+    "react components",
+    "react web components",
+    "react wrapper for web components",
+    "react wrapper for crown elements",
+    "crown elements react wrapper",
+    "crown elements react components",
+    "crown elements react web components",
+    "crown elements react wrapper"
   ],
-  "author": "Steph Crown <emmanuelstephen024@gmail.com>",
-  "homepage": "https://github.com/Steph-crown/crown-elements#readme",
+  "author": "Stephen Emmanuel <emmanuelstephen024@gmail.com>",
+  "homepage": "https://github.com/Steph-crown/crown-elements/packages/react#readme",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.js",
