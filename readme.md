@@ -11,13 +11,16 @@ Crown Elements is a collection of reusable and customizable web components desig
 Once the project is completed, you'll be able to install Crown Elements via npm:
 
 ```bash
-npm install crown-elements
+npm install @crownelements/core
 ```
 
 Or include it directly in your HTML:
 
 ```html
-<script src="https://unpkg.com/crown-elements"></script>
+<script
+  type="module"
+  src="https://unpkg.com/@crownelements/core@0.0.1/dist/crownelements/crownelements.esm.js"
+></script>
 ```
 
 ## Usage
@@ -35,7 +38,7 @@ Crown Elements can be used in any web application, regardless of the framework o
   <body>
     <crown-button>Click me</crown-button>
 
-    <script src="https://unpkg.com/crown-elements"></script>
+    <script src="https://unpkg.com/@crownelements/core@0.0.1/dist/crownelements/crownelements.esm.js"></script>
   </body>
 </html>
 ```
