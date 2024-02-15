@@ -36,16 +36,7 @@ module.exports = {
         'grey/800': '#38393A',
         'grey/900': '#131313',
 
-        'primary/50': '#FDF5F5',
-        'primary/100': '#F8D7D8',
-        'primary/200': '#F1AEB0',
-        'primary/300': '#E87C7F',
-        'primary/400': '#DF494E',
-        'primary/500': '#DB353A',
-        'primary/600': '#CA2429',
-        'primary/700': '#901A1D',
-        'primary/800': '#570F12',
-        'primary/900': '#1D0506',
+        'primary/100': '#DC3256',
 
         'secondary/blue/50': '#F4FAFC',
         'secondary/blue/100': '#D1EDF4',
