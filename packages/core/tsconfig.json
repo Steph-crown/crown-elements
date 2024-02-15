@@ -11,8 +11,14 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "jsx": "react",
-    "jsxFactory": "h"
+    "jsxFactory": "h",
+    "baseUrl": "src",
+    "paths": {
+      "@utils/*": ["utils/*"],
+      "@components/*": ["components/*"]
+    }
   },
+
   "include": ["src", "tailwind.config.js"],
   "exclude": ["node_modules"]
 }
