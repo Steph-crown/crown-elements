@@ -1,9 +1,21 @@
+import tailwind, { PluginOpts, tailwindHMR } from 'stencil-tailwind-plugin';
+
 import { Config } from '@stencil/core';
+import cfg from './tailwind.config';
 import { reactOutputTarget } from '@stencil/react-output-target';
 import { vueOutputTarget } from '@stencil/vue-output-target';
 
+const tailwindOpts = {
+  ...PluginOpts.DEFAULT,
+  debug: false,
+  stripComments: true,
+  tailwindConf: cfg,
+};
+
 export const config: Config = {
   namespace: 'core',
+  plugins: [tailwind(tailwindOpts), tailwindHMR(tailwindOpts)],
+
   outputTargets: [
     {
       type: 'dist',
