@@ -123,10 +123,10 @@ const buttonLightModeVariantClasses = {
 const buttonDarkModeVariantClasses = {
   filled: 'bg-primary/100 text-white disabled:bg-sys/dark/disabled/[.12] disabled:text-sys/dark/disabled/[.38]',
   outlined:
-    'bg-transparent border border-solid border-sys/dark/outline text-neutral/95 hover:bg-primary/100/10 hover:text-primary/70 active:bg-primary/100/10 active:border-primary/70 disabled:bg-transparent disabled:border-sys/dark/disabled/[.12] disabled:text-sys/dark/disabled/[.38]',
-  text: 'text-primary-600 hover:bg-primary-600 hover:text-white',
-  elevated: 'bg-primary-600 hover:bg-primary-700 text-white shadow-md',
-  tonal: 'bg-primary-600 hover:bg-primary-700 text-white shadow-none',
+    'bg-transparent border border-solid border-sys/dark/outline text-neutral/95 hover:bg-secondary/purple/100/[.08] hover:text-primary/70 active:bg-primary/100/10 active:border-primary/70 disabled:bg-transparent disabled:border-sys/dark/disabled/[.12] disabled:text-sys/dark/disabled/[.38]',
+  text: 'bg:transparent text-neutral/98 hover:bg-secondary/purple/100/[.08] active:bg-secondary/purple/100/[.12] disabled:bg-transparent disabled:text-sys/dark/disabled/[.38]',
+  elevated: 'bg-sys/light/disabled text-neutral/98 hover:bg-secondary/purple/100/[.08] active:bg-primary/70/[.20] disabled:bg-transparent disabled:text-sys/dark/disabled/[.38]',
+  tonal: 'bg-secondary/purple/100/[.08] hover:bg-primary/70/[.20] active:bg-primary/70/[.40] text-neutral/98 disabled:bg-transparent disabled:text-sys/dark/disabled/[.38]',
 };
 
 const buttonVariantClasses = {
