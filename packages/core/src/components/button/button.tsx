@@ -121,7 +121,7 @@ const buttonLightModeVariantClasses = {
 };
 
 const buttonDarkModeVariantClasses = {
-  filled: 'bg-primary-600 text-white',
+  filled: 'bg-primary/100 text-white disabled:bg-sys/dark/disabled/[.12] disabled:text-sys/dark/disabled/[.38]',
   outlined: 'border border-primary-600 text-primary-600  hover:bg-primary-600 hover:text-white',
   text: 'text-primary-600 hover:bg-primary-600 hover:text-white',
   elevated: 'bg-primary-600 hover:bg-primary-700 text-white shadow-md',
