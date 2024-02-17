@@ -7,4 +7,4 @@ import type { JSX } from '@crownelements/core';
 
 
 
-export const MyComponent = /*@__PURE__*/createReactComponent<JSX.MyComponent, HTMLMyComponentElement>('my-component');
+export const CrownButton = /*@__PURE__*/createReactComponent<JSX.CrownButton, HTMLCrownButtonElement>('crown-button');
