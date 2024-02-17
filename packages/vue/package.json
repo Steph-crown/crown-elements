@@ -21,8 +21,7 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
     "build": "npm run tsc",
-    "tsc": "tsc -p . --outDir ./dist",
-    "release": "npm run build && standard-version && git push --follow-tags && npm publish"
+    "tsc": "tsc -p . --outDir ./dist"
   },
   "bugs": {
     "url": "https://github.com/Steph-crown/crown-elements/issues"
