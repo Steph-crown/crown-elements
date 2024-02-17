@@ -17,6 +17,7 @@ module.exports = {
         'neutral/10': '#201A1A',
         'neutral/35': '#595051',
         'neutral/50': '#7E7575',
+        'neutral/95': '#FBEEEE',
 
         'grey/50': '#FAFAFA',
         'grey/100': '#EAEAEB',
@@ -32,9 +33,11 @@ module.exports = {
         'primary/100': '#DC3256',
         'primary/100/4': '#dc32560a',
         'primary/100/10': '#DC325619',
+        'primary/70': '#FF8795',
 
         'sys/light/disabled': '#1D1B20',
         'sys/dark/disabled': '#E6E0E9',
+        'sys/dark/outline': '#938F99',
         'sys/light/surface-container-low': '#FFF5FB',
 
         'secondary/blue/50': '#F4FAFC',

@@ -122,7 +122,8 @@ const buttonLightModeVariantClasses = {
 
 const buttonDarkModeVariantClasses = {
   filled: 'bg-primary/100 text-white disabled:bg-sys/dark/disabled/[.12] disabled:text-sys/dark/disabled/[.38]',
-  outlined: 'border border-primary-600 text-primary-600  hover:bg-primary-600 hover:text-white',
+  outlined:
+    'bg-transparent border border-solid border-sys/dark/outline text-neutral/95 hover:bg-primary/100/10 hover:text-primary/70 active:bg-primary/100/10 active:border-primary/70 disabled:bg-transparent disabled:border-sys/dark/disabled/[.12] disabled:text-sys/dark/disabled/[.38]',
   text: 'text-primary-600 hover:bg-primary-600 hover:text-white',
   elevated: 'bg-primary-600 hover:bg-primary-700 text-white shadow-md',
   tonal: 'bg-primary-600 hover:bg-primary-700 text-white shadow-none',
