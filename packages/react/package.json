@@ -22,7 +22,8 @@
   "scripts": {
     "test": "node ./__tests__/react.test.js",
     "build": "npm run tsc",
-    "tsc": "tsc -p . --outDir ./dist"
+    "tsc": "tsc -p . --outDir ./dist",
+    "release": "npm run test && npm run build && standard-version && git push --follow-tags && npm publish"
   },
   "bugs": {
     "url": "https://github.com/Steph-crown/crown-elements/issues"

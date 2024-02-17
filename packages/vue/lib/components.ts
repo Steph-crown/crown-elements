@@ -20,10 +20,3 @@ export const CrownButton = /*@__PURE__*/ defineContainer<JSX.CrownButton>('crown
   'mode'
 ]);
 
-
-export const MyComponent = /*@__PURE__*/ defineContainer<JSX.MyComponent>('my-component', undefined, [
-  'first',
-  'middle',
-  'last'
-]);
-
