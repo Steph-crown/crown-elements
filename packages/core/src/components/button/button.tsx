@@ -2,6 +2,8 @@ import { Component, Element, Prop, h } from '@stencil/core';
 
 import { hasSlot } from '@utils/slot';
 
+// import { baseButtonClass, buttonVariantClasses } from './button.constants';
+
 /**
  * CrownButton Component
  * Represents a customizable button component.
@@ -61,6 +63,12 @@ export class CrownButton {
    */
   @Prop() width: 'auto' | 'full' | string = 'auto';
 
+  /**
+   * The color mode of the button. Possible values include "light" or "dark".
+   * @default "light"
+   */
+  @Prop() mode: 'light' | 'dark' = 'light';
+
   private getWidthClass(): string {
     const widthClasses = {
       auto: 'w-max',
@@ -84,22 +92,45 @@ export class CrownButton {
       autofocus: this.autofocus,
     };
 
-    const variantClasses = {
-      filled: 'bg-primary/100 text-white',
-      outlined: 'border border-red-600 text-red-600 hover:bg-red-600 hover:text-white',
-      text: 'text-red-600 hover:bg-red-600 hover:text-white',
-      elevated: 'bg-red-600 hover:bg-red-700 text-white shadow-md',
-      tonal: 'bg-red-600 hover:bg-red-700 text-white shadow-none',
-    };
-
-    const baseClass = 'text-sm font-medium leading-[160%] flex items-center justify-center rounded-[0.25rem] px-7 py-2.5 w-full gap-2 transition-all';
+    const variantClasses = buttonVariantClasses[this.mode];
 
     return (
-      <button {...buttonProps} class={`${baseClass} ${variantClasses[this.variant]} ${this.customClass ?? ''} ${this.getWidthClass()} ${this.variant} relative`}>
+      <button
+        {...buttonProps}
+        class={`${baseButtonClass} ${variantClasses[this.variant]} ${this.customClass ?? ''} ${this.getWidthClass()} ${this.variant} relative disabled:cursor-not-allowed`}
+      >
         {hasBeforeSlot ? <slot name="before" /> : null}
         <slot />
-        {/* {hasAfterSlot ? <slot name="after" /> : null} */}
+        {hasAfterSlot ? <slot name="after" /> : null}
       </button>
     );
   }
 }
+
+/**
+ * class names for button variants.
+ */
+
+const buttonLightModeVariantClasses = {
+  filled: 'bg-primary/100 text-white disabled:bg-sys/light/disabled/[.12] disabled:text-sys/light/disabled/[.38]',
+  outlined:
+    'bg-transparent border border-solid border-neutral/50 text-neutral/10 hover:bg-primary/100/4 hover:text-primary/100 active:bg-primary/100/10 active:border-primary/100 disabled:bg-transparent disabled:border-sys/light/disabled/[.12] disabled:text-sys/light/disabled/[.38]',
+  text: 'text-red-600 hover:bg-red-600 hover:text-white',
+  elevated: 'bg-red-600 hover:bg-red-700 text-white shadow-md',
+  tonal: 'bg-red-600 hover:bg-red-700 text-white shadow-none',
+};
+
+const buttonDarkModeVariantClasses = {
+  filled: 'bg-primary-600 text-white',
+  outlined: 'border border-primary-600 text-primary-600  hover:bg-primary-600 hover:text-white',
+  text: 'text-primary-600 hover:bg-primary-600 hover:text-white',
+  elevated: 'bg-primary-600 hover:bg-primary-700 text-white shadow-md',
+  tonal: 'bg-primary-600 hover:bg-primary-700 text-white shadow-none',
+};
+
+const buttonVariantClasses = {
+  light: buttonLightModeVariantClasses,
+  dark: buttonDarkModeVariantClasses,
+};
+
+const baseButtonClass = 'text-sm font-medium leading-[160%] flex items-center justify-center rounded-[0.25rem] px-7 py-2.5 w-full gap-2 transition-all';

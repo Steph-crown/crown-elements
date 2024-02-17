@@ -6,6 +6,8 @@
  * @param name The name of the slot to check.
  * @returns Whether the slot exists or not.
  */
-export function hasSlot(host: HTMLElement, name: string): boolean {
+const hasSlot = (host: HTMLElement, name: string): boolean => {
   return !!host.querySelector(`[slot="${name}"]`);
-}
+};
+
+export default hasSlot;

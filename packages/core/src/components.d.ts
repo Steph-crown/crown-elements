@@ -26,6 +26,11 @@ export namespace Components {
          */
         "disabled": boolean;
         /**
+          * The color mode of the button. Possible values include "light" or "dark".
+          * @default "light"
+         */
+        "mode": 'light' | 'dark';
+        /**
           * The name of the button, which is submitted with the form data.
          */
         "name": string;
@@ -105,6 +110,11 @@ declare namespace LocalJSX {
           * @default false
          */
         "disabled"?: boolean;
+        /**
+          * The color mode of the button. Possible values include "light" or "dark".
+          * @default "light"
+         */
+        "mode"?: 'light' | 'dark';
         /**
           * The name of the button, which is submitted with the form data.
          */

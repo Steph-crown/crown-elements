@@ -14,16 +14,9 @@ module.exports = {
         xs: '460px',
       },
       colors: {
-        'neutral/50': '#F7F8F9',
-        'neutral/100': '#E7EAEE',
-        'neutral/200': '#D0D5DD',
-        'neutral/300': '#B8C0CC',
-        'neutral/400': '#A0ABBB',
-        'neutral/500': '#64748B',
-        'neutral/600': '#4B5768',
-        'neutral/700': '#323A46',
-        'neutral/800': '#191D23',
-        'neutral/900': '#0D0F11',
+        'neutral/10': '#201A1A',
+        'neutral/35': '#595051',
+        'neutral/50': '#7E7575',
 
         'grey/50': '#FAFAFA',
         'grey/100': '#EAEAEB',
@@ -37,6 +30,10 @@ module.exports = {
         'grey/900': '#131313',
 
         'primary/100': '#DC3256',
+        'primary/100/4': '#dc32560a',
+        'primary/100/10': '#DC325619',
+
+        'sys/light/disabled': '#1D1B20',
 
         'secondary/blue/50': '#F4FAFC',
         'secondary/blue/100': '#D1EDF4',
