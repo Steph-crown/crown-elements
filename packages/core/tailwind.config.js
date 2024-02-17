@@ -34,6 +34,7 @@ module.exports = {
         'primary/100/10': '#DC325619',
 
         'sys/light/disabled': '#1D1B20',
+        'sys/light/surface-container-low': '#FFF5FB',
 
         'secondary/blue/50': '#F4FAFC',
         'secondary/blue/100': '#D1EDF4',
