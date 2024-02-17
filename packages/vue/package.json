@@ -33,6 +33,7 @@
     "@crownelements/core": "*"
   },
   "devDependencies": {
+    "standard-version": "^9.5.0",
     "vue": "^3.4.18"
   }
 }
